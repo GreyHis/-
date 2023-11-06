@@ -25,13 +25,13 @@ func main() {
 	fmt.Println("请输入两个数和运算符号")
 	fmt.Scanf("%d %d %s", &a, &b, &c)
 	switch c {
-	case "sum":
+	case "+":
 		fmt.Println(Calculator(a, b, sum))
-	case "sub":
+	case "-":
 		fmt.Println(Calculator(a, b, sub))
-	case "multiply":
+	case "*":
 		fmt.Println(Calculator(a, b, multiply))
-	case "divide":
+	case "/":
 		fmt.Println(Calculator(a, b, divide))
 	}
 

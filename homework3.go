@@ -1,6 +1,11 @@
 package main
 
 import "fmt"
+type Manager interface {
+	cheek()
+	Setnumber()
+	Print()
+}
 
 type commodity struct {
 	name   string
@@ -19,12 +24,14 @@ func (c commodity) Print() {
 	fmt.Println(c)
 
 }
-
-type Manager interface {
-	cheek()
-	Setnumber()
-	Print()
+type EManger interface {
+	Echeak()
+	Eupdate()
+	EPrint()
 }
+
+
+
 type electronics struct {
 	brand     string
 	Model     string
@@ -41,8 +48,4 @@ func (e electronics) EPrint() {
 	fmt.Println(e)
 }
 
-type EManger interface {
-	Echeak()
-	Eupdate()
-	EPrint()
-}
+
